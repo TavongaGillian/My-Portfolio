@@ -3,18 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
-.container {
-  margin: 10px 10px 0px 10px;
-}
+
 .nav-wrapper {
   position: fixed;
   top: 0;
   width: 100%;
-  margin-right: 10px;
+  background-color: blueviolet;
 }
 button {
   min-width: 80px;
-  margin-inline: 3px;
+  margin: 2px;
 }
 .navbar {
   background-color: aqua;
@@ -22,6 +20,7 @@ button {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-inline: 10px;
 }
 
 a {
@@ -37,7 +36,7 @@ button:hover {
   grid-template-columns: 1fr 10fr 1fr;
   gap: 30px;
   text-align: center;
-  margin-top: 90px;
+  margin: 90px 10px 0px 10px;
 }
 
 .green {
@@ -74,4 +73,23 @@ hr {
   width: 50%;
   margin: auto;
   height: 3px;
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-color: rgb(184, 93, 191);
+  }
+  .display-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  hr {
+    width: 90%;
+  }
+  img {
+    height: 200px;
+  }
+  button {
+    min-width: 80px;
+  }
 }
